@@ -35,7 +35,7 @@ jobs:
       - name: Verify build
         run: |
           cd frontend
-          if [ ! -d "build" ]; then
-            echo "Build directory does not exist!"
+          if [ ! -d "src" ]; then
+            echo "Build directory 'src' does not exist!"
             exit 1
           fi
