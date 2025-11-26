@@ -32,10 +32,8 @@ jobs:
           npm test -- --run
           npm run build
       # TODO : Vérifiez le build
-      - name: Verify build
+      - name: Verification du build
         run: |
           cd frontend
-          if [ ! -d "src" ]; then
-            echo "Build directory 'src' does not exist!"
-            exit 1
-          fi
+          npm run build
+        
